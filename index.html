@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計算機シミュレーション</title>
+</head>
+
+<body>
+    <div class="calc-container">
+        <div class="calc-preview">
+            <p>|</p>
+        </div>
+
+        <ul class="func-container">
+            <li class="icon histry">
+                <ion-icon name="time-outline"></ion-icon>
+            </li>
+            <li class="icon delete">
+                <ion-icon name="backspace-outline"></ion-icon>
+            </li>
+        </ul>
+
+        <ul class="input-container">
+            <li class="input-num clear operator">C</li>
+            <li class="input-num brackets operator">()</li>
+            <li class="input-num persent operator">%</li>
+            <li class="input-num divided operator">÷</li>
+
+            <li class="input-num">7</li>
+            <li class="input-num">8</li>
+            <li class="input-num">9</li>
+            <li class="input-num operator">×</li>
+
+            <li class="input-num">4</li>
+            <li class="input-num">5</li>
+            <li class="input-num">6</li>
+            <li class="input-num minus operator">-</li>
+
+            <li class="input-num">1</li>
+            <li class="input-num">2</li>
+            <li class="input-num">3</li>
+            <li class="input-num plus operator">+</li>
+            
+            <li class="input-num plus-minus">+/-</li>
+            <li class="input-num">0</li>
+            <li class="input-num">.</li>
+            <li class="input-num operator">=</li>
+        </ul>
+    </div>
+
+    <script src="calc.js"></script>
+
+    <!-- ioniiconsのCDN読み込み -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

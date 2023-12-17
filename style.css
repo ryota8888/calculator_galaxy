@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: #f3efee;
+    color: #af211a;
+    width: 100%;
+}
+
+.calc-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.calc-preview {
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+
+    & p{
+        color: #e3958f;
+        font-size: 2rem;
+        font-family: 'Kosugi Maru', sans-serif;
+    }
+}
+
+.func-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    & .icon {
+        color: #af211a;
+    }
+
+    & .icon ion-icon {
+        height: 35px;
+        width: 35px;
+    }
+
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+
+    text-align: center;
+
+    & .input-num {
+        margin: 10px;
+        padding: 5px;
+        background-color: #f1e6e4;
+        border-radius: 40px;
+        min-width: 65px;
+        min-height: 65px;
+        white-space: nowrap;
+    }
+
+    & .operator {
+        color: #7f3fae;
+    }
+    & .plus-minus {
+        margin: 10px auto;
+    }
+}
